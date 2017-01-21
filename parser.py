@@ -44,7 +44,7 @@ def getAttachment(emails):
 
 def fileParse():
 	wb = xlrd.open_workbook(DIR + 'raschet.xlsx')
-	sh = wb.sheet_by_index(5)
+	sh = wb.sheet_by_index(0)
 	 
 	fullData = []
 	places = []
@@ -62,7 +62,7 @@ def fileParse():
 
 
 
-	row_values = sh.row_values(2)
+	row_values = sh.row_values(3)
 	temp = []
 
 	for colnum in range(2, 366):
@@ -83,36 +83,36 @@ def fileParse():
 
 
 
-	# row_values = sh.row_values(4)
-	# temp = []
+	row_values = sh.row_values(5)
+	temp = []
 
-	# for colnum in range(2, 366):
-	# 	temp.append(row_values[colnum])
-
-
-	# fullData.append(temp)
+	for colnum in range(2, 366):
+		temp.append(row_values[colnum])
 
 
-
-	# row_values = sh.row_values(5)
-	# temp = []
-
-	# for colnum in range(2, 366):
-	# 	temp.append(row_values[colnum])
-
-
-	# fullData.append(temp)
+	fullData.append(temp)
 
 
 
-	# row_values = sh.row_values(6)
-	# temp = []
+	row_values = sh.row_values(6)
+	temp = []
 
-	# for colnum in range(2, 366):
-	# 	temp.append(row_values[colnum])
+	for colnum in range(2, 366):
+		temp.append(row_values[colnum])
 
 
-	# fullData.append(temp)
+	fullData.append(temp)
+
+
+
+	 # row_values = sh.row_values(6)
+	 # temp = []
+
+	 # for colnum in range(2, 366):
+	 # 	temp.append(row_values[colnum])
+
+
+	 # fullData.append(temp)
 
 
 
@@ -120,10 +120,10 @@ def fileParse():
 
 
 	full_dict = OrderedDict()
-	full_dict['uaz_0044'] = fullData
+	full_dict['UAZ'] = fullData
 	j = json.dumps(full_dict)
 	
-	with open('uaz_0044.json', 'w') as f:
+	with open('UAZ.json', 'w') as f:
 		f.write(j)
 
 
