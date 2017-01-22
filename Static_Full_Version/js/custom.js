@@ -51,7 +51,17 @@
         var o_date = $("#o_date").val();
         var o_type = $("#o_type").val();
         lines = lines + 1;
-        var str = '<tr id="' + lines + '" ><td>' + o_type + '</td><td>' + o_count + '</td><td>' + o_volume + '</td><td>' + o_date + '</td><td></td></tr>';
+        var o_type_text = "Вертикальная";
+        if (o_type == "0") {
+            o_type_text = "Вертикальная";
+        }
+        if (o_type == "1") {
+            o_type_text = "Горизонтальная";
+        }
+        if (o_type == "2") {
+            o_type_text = "Наклонная";
+        }
+        var str = '<tr id="' + lines + '" ><td>' + o_type_text + '</td><td>' + o_count + '</td><td>' + o_volume + '</td><td>' + o_date + '</td><td></td></tr>';
 
         $("#o_table").append(str);
         $('#b' + lines).on('click', function() {
@@ -84,16 +94,16 @@
         // console.log('adding data');
         // console.log(addedData.toFixed(2));
         if (o_type == "0") {
-            vertWork = vertWork + 1;
-            vertData = vertData + addedData;
+            vertWork = parseInt(vertWork) + parseInt(o_count);
+            vertData = parseInt(vertData) + parseInt(addedData);
         }
         if (o_type == "1") {
-            horWork = horWork + 1;
-            horData = horData + addedData;
+            horWork = parseInt(horWork) + parseInt(o_count);
+            horData = parseInt(horData) + parseInt(addedData);
         }
         if (o_type == "2") {
-            inlineWork = inlineWork + 1;
-            inlineData = inlineData + addedData;
+            inlineWork = parseInt(inlineWork) + parseInt(o_count);
+            inlineData = parseInt(inlineData) + parseInt(addedData);
         }
 
         $("#vertWork").text(vertWork);
