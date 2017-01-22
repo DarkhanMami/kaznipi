@@ -27,7 +27,7 @@
                 <div class="p-w-md m-t-sm">
                     <div class="row">
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <h1 class="m-b-xs">
                                 26,900
                             </h1>
@@ -52,33 +52,12 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-4">
-                            <h1 class="m-b-xs">
-                                98,100
-                            </h1>
-                            <small>
-                                Sales in last 24h
-                            </small>
-                            <div id="sparkline2" class="m-b-sm"></div>
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <small class="stats-label">Pages / Visit</small>
-                                    <h4>166 781.80</h4>
-                                </div>
-
-                                <div class="col-xs-4">
-                                    <small class="stats-label">% New Visits</small>
-                                    <h4>22.45%</h4>
-                                </div>
-                                <div class="col-xs-4">
-                                    <small class="stats-label">Last week</small>
-                                    <h4>862.044</h4>
-                                </div>
+                        <div class="col-sm-3">
+                            <div class="flot-chart">
+                                <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
                             </div>
-
-
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
 
                             <div class="row m-t-xs">
                                 <div class="col-xs-6">
@@ -671,6 +650,42 @@
 
             replot();
 
+            var data = [{
+                label: "Sales 1",
+                data: 21,
+                color: "#d3d3d3",
+            }, {
+                label: "Sales 2",
+                data: 3,
+                color: "#bababa",
+            }, {
+                label: "Sales 3",
+                data: 15,
+                color: "#79d2c0",
+            }, {
+                label: "Sales 4",
+                data: 52,
+                color: "#1ab394",
+            }];
+            var plotObj = $.plot($("#flot-pie-chart"), data, {
+                series: {
+                    pie: {
+                        show: true
+                    }
+                },
+                grid: {
+                    hoverable: true
+                },
+                tooltip: true,
+                tooltipOpts: {
+                    content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                    shifts: {
+                        x: 20,
+                        y: 0
+                    },
+                    defaultTheme: false
+                }
+            });
         });
     </script>
 </body>
