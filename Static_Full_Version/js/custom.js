@@ -25,10 +25,24 @@
         }];
         var plotObj = $.plot($("#flot-pie-chart-2"), data, {
             series: {
-                pie: {
-                    show: true
-                }
-            },
+                    pie: {
+                        show: true,                
+                        label: {
+                            show:true,
+                            radius: 0.8,
+                            formatter: function (label, series) {                
+                                return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                                label + ' : ' +
+                                Math.round(series.percent) +
+                                '%</div>';
+                            },
+                            background: {
+                                opacity: 0.8,
+                                color: '#000'
+                            }
+                        }
+                    }
+                },
             grid: {
                 hoverable: true
             },
@@ -40,6 +54,9 @@
                     y: 0
                 },
                 defaultTheme: false
+            },
+            legend: {
+                show: false
             }
         });
     }
