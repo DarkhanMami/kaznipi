@@ -1,17 +1,57 @@
 (function() {
-    var lines = 10;
+    var lines = 0;
+    var vertData =0;
+    var horData = 0;
+    var inlineData = 0;
 
     function rand(min,max)
     {
         return Math.floor(Math.random()*(max-min+1)+min);
     }
+
+    function replotPie() {
+        var data = [{
+            label: "Вертикальные скважины",
+            data: vertData,
+            color: "#79d2c0",
+        }, {
+            label: "Горизонтальные скважины",
+            data: horData,
+            color: "#bababa",
+        }, {
+            label: "Наклонные скважины",
+            data: inlineData,
+            color: "#69B8CA",
+        }];
+        var plotObj = $.plot($("#flot-pie-chart-2"), data, {
+            series: {
+                pie: {
+                    show: true
+                }
+            },
+            grid: {
+                hoverable: true
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                shifts: {
+                    x: 20,
+                    y: 0
+                },
+                defaultTheme: false
+            }
+        });
+    }
+
+    replotPie();
     $("#o_add").on('click', function() {
         var o_count = $("#o_count").val();
         var o_volume = $("#o_volume").val();
         var o_date = $("#o_date").val();
         var o_type = $("#o_type").val();
         lines = lines + 1;
-        var str = '<tr id="' + lines + '" ><td>' + o_type + '</td><td>' + o_count + '</td><td>' + o_volume + '</td><td>' + o_date + '</td><td><button type="button" class="btn btn-w-m btn-danger btn-sm" id="' + 'b' + lines + '">Удалить</button></td></tr>';
+        var str = '<tr id="' + lines + '" ><td>' + o_type + '</td><td>' + o_count + '</td><td>' + o_volume + '</td><td>' + o_date + '</td><td></td></tr>';
 
         $("#o_table").append(str);
         $('#b' + lines).on('click', function() {
@@ -40,9 +80,28 @@
             }
         });
         $("#addedData").text(addedData.toFixed(2));
+        $("#addedPercent").text((100.0 * (addedData / 82764.0)).toFixed(0) + '%');
         // console.log('adding data');
         // console.log(addedData.toFixed(2));
+        if (o_type == "0") {
+            vertWork = vertWork + 1;
+            vertData = vertData + addedData;
+        }
+        if (o_type == "1") {
+            horWork = horWork + 1;
+            horData = horData + addedData;
+        }
+        if (o_type == "2") {
+            inlineWork = inlineWork + 1;
+            inlineData = inlineData + addedData;
+        }
+
+        $("#vertWork").text(vertWork);
+        $("#horWork").text(horWork);
+        $("#inlineWork").text(inlineWork);
+
         replot();
+        replotPie();
 
     });
 })();

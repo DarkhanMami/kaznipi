@@ -27,7 +27,7 @@
                 <div class="p-w-md m-t-sm">
                     <div class="row">
 
-                        <div class="col-sm-3">
+<!--                         <div class="col-sm-3">
                             <h1 class="m-b-xs">
                                 26,900
                             </h1>
@@ -51,24 +51,19 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="flot-chart">
-                                <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
+                        </div> -->
+                        <div class="col-sm-4">
 
                             <div class="row m-t-xs">
                                 <div class="col-xs-6">
-                                    <h5 class="m-b-xs">Income last month</h5>
-                                    <h1 class="no-margins" id="addedData">0</h1>
-                                    <div class="font-bold text-navy"><span>98%</span> <i class="fa fa-bolt"></i></div>
+                                    <h5 class="m-b-xs">Фактическая добыча</h5>
+                                    <h1 class="no-margins">75,902</h1>
+                                    <div class="font-bold text-navy">100%</div>
                                 </div>
                                 <div class="col-xs-6">
-                                    <h5 class="m-b-xs">Sals current year</h5>
-                                    <h1 class="no-margins">42,120</h1>
-                                    <div class="font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                    <h5 class="m-b-xs">Дополнительная добыча</h5>
+                                    <h1 class="no-margins">21,693</h1>
+                                    <div class="font-bold text-navy">29%</div>
                                 </div>
                             </div>
 
@@ -77,28 +72,36 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <strong>142</strong> Projects
+                                        <strong>Ввод новых скважин</strong>
 
                                     </td>
                                     <td>
-                                        <strong>22</strong> Messages
+                                        <strong>54</strong> Работ
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>61</strong> Comments
+                                        <strong>Мероприятия на бездейстфующем фонде</strong>
                                     </td>
                                     <td>
-                                        <strong>54</strong> Articles
+                                        <strong>54</strong> Работ
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>154</strong> Companies
+                                        <strong>Мероприятия на дейстфующем фонде</strong>
                                     </td>
                                     <td>
-                                        <strong>32</strong> Clients
+                                        <strong>32</strong> Работ
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Совершенствование системы воздействия</strong>
+                                    </td>
+                                    <td>
+                                        <strong>32</strong> Работ
                                     </td>
                                 </tr>
                                 </tbody>
@@ -106,6 +109,68 @@
 
 
 
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="flot-chart">
+                                <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+
+                            <div class="row m-t-xs">
+                                <div class="col-xs-6">
+                                    <h5 class="m-b-xs">Прогнозная добыча</h5>
+
+                                    <h1 class="no-margins" >82,764</h1>
+                                    <div class="font-bold text-navy">100%</div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="m-b-xs">Доп. прогнозная добыча</h5>
+                                    <h1 class="no-margins" id="addedData">0</h1>
+                                    <div class="font-bold text-navy"><span id="addedPercent">0%</span></div>
+                                </div>
+                            </div>
+
+                            <table class="table small m-t-sm">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Вертикальные скважины</strong>
+
+                                    </td>
+                                    <td>
+                                        <strong id="vertWork">0</strong> Работ
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Горизонтальные скважины</strong>
+
+                                    </td>
+                                    <td>
+                                        <strong id="horWork">0</strong> Работ
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Наклонные скважины</strong>
+
+                                    </td>
+                                    <td>
+                                        <strong id="inlineWork">0</strong> Работ
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="flot-chart">
+                                <div class="flot-chart-pie-content" id="flot-pie-chart-2"></div>
+                            </div>
                         </div>
 
                     </div>
@@ -288,9 +353,9 @@
                                                                     <tr>
                                                                         <td>
                                                                             <select class="form-control m-b" id="o_type">
-                                                                                <option selected="selected">Вертикальная</option>
-                                                                                <option>Горизонтальная</option>
-                                                                                <option>Наклонная</option>
+                                                                                <option selected="selected" value="0">Вертикальная</option>
+                                                                                <option value="1">Горизонтальная</option>
+                                                                                <option value="2">Наклонная</option>
                                                                             </select>
                                                                         </td>
                                                                         <td><input type="text" class="form-control" id="o_count"></td>
@@ -457,6 +522,9 @@
         }
 
         var addedData = 0;
+        var vertWork = 0;
+        var horWork = 0;
+        var inlineWork = 0;
 
 
         var changeTable3 = function() {
