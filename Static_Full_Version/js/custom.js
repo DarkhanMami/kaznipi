@@ -29,13 +29,19 @@
                 // console.log(index);
                 // var ran = rand(80, 100);
                 // console.log( adding * ran * 0.01);
-                value[1] = value[1] + adding * rand(80, 100) / 100.0;
+                var curAdded = adding * rand(80, 100) / 100.0;
+                addedData = addedData + curAdded;
+
+                value[1] = value[1] + curAdded;
                 if (value[1] > yMAX) {
                     yMAX = Math.floor(value[1]);
                 }
                 adding = adding - adding * 0.005;
             }
         });
+        $("#addedData").text(addedData.toFixed(2));
+        // console.log('adding data');
+        // console.log(addedData.toFixed(2));
         replot();
 
     });
