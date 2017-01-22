@@ -11,26 +11,26 @@
 
     function replotPie() {
         var data = [{
-            label: "Вертикальные скважины",
+            label: "#1",
             data: vertData,
             color: "#79d2c0",
         }, {
-            label: "Горизонтальные скважины",
+            label: "#2",
             data: horData,
             color: "#bababa",
         }, {
-            label: "Наклонные скважины",
+            label: "#3",
             data: inlineData,
             color: "#69B8CA",
         }];
         var plotObj = $.plot($("#flot-pie-chart-2"), data, {
             series: {
                     pie: {
-                        show: true,                
+                        show: true,               
                         label: {
                             show:true,
                             radius: 0.8,
-                            formatter: function (label, series) {                
+                            formatter: function (label, series) {               
                                 return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
                                 label + ' : ' +
                                 Math.round(series.percent) +
