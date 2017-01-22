@@ -183,7 +183,7 @@
 
                                 <div class="ibox-content">
 
-                                    <div class="row">
+                                    <div class="row" id="headers">
                                         <div class="col-sm-3">
                                             <div class="form-group">
                                                 <label class="control-label" for="product_name">Наименование</label>
@@ -715,10 +715,17 @@
         var changeTable1 = function() {
             var table = $("#mytable");
             table.empty();
-            table.append( "<tr><td>Ввод новых скважин, всего</td></tr>" );
+            table.append( "<tr><td class=\"col-sm-4\">Ввод новых скважин, всего</td></tr>" );
             table.append( "<tr><td>В т.ч. из эксплуатационного бурения</td></tr>" );
             table.append( "<tr><td>Из них вертик. и наклонно-направленных</td></tr>" );
             table.append( "<tr><td>Из них горизонтальных</td></tr>" );
+            var headers = $("#headers");
+            headers.empty();
+            headers.append("<div class=\"col-sm-4\"><div class=\"form-group\"><label class=\"control-label\" for=\"product_name\">Наименование</label></div></div>");
+            headers.append("<div class=\"col-sm-2\"><div class=\"form-group\"><label class=\"control-label\" for=\"product_name\">Кол. скважин</label></div></div>");
+            headers.append("<div class=\"col-sm-3\"><div class=\"form-group\"><label class=\"control-label\" for=\"product_name\">Средняя  добыча 1 скв.</label></div></div>");
+            headers.append("<div class=\"col-sm-3\"><div class=\"form-group\"><label class=\"control-label\" for=\"product_name\">Дата  начала работ скв.</label></div></div>");
+
             
         }
         var changeTable2 = function() {
