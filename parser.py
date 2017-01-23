@@ -83,7 +83,7 @@ def fileParse():
 
 
 
-	row_values = sh.row_values(5)
+	row_values = sh.row_values(9)
 	temp = []
 
 	for colnum in range(2, 366):
@@ -94,7 +94,7 @@ def fileParse():
 
 
 
-	row_values = sh.row_values(6)
+	row_values = sh.row_values(7)
 	temp = []
 
 	for colnum in range(2, 366):
@@ -105,14 +105,14 @@ def fileParse():
 
 
 
-	row_values = sh.row_values(6)
-	temp = []
+	# row_values = sh.row_values(6)
+	# temp = []
 
-	for colnum in range(2, 366):
-		temp.append(row_values[colnum])
+	# for colnum in range(2, 366):
+	# 	temp.append(row_values[colnum])
 
 
-	fullData.append(temp)
+	# fullData.append(temp)
 
 
 
