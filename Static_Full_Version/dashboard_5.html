@@ -80,12 +80,10 @@
                                 <tr>
                                     <td>
                                         <strong>#1 Ввод новых скважин</strong>
-
                                     </td>
                                     <td>
                                         <strong>4</strong> Работ
                                     </td>
-
                                 </tr>
                                 <tr>
                                     <td>
@@ -117,69 +115,84 @@
 
 
                         </div>
-                        <div class="col-sm-2">
-                            <div class="flot-chart" style="height:200px">
-                                <div class="flot-chart-pie-content" id="flot-pie-chart" style="height:200px"></div>
+                        
+                            <div class="col-sm-2">
+                                <div class="flot-chart" style="height:200px">
+                                    <div class="flot-chart-pie-content" id="flot-pie-chart" style="height:200px"></div>
+                                </div>
                             </div>
-                        </div>
+                        
+                            
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
 
                             <div class="row m-t-xs">
-                                <div class="col-xs-6">
+                                <div class="col-xs-3">
                                     <h5 class="m-b-xs">Прогнозная добыча</h5>
 
                                     <h1 class="no-margins" >82,764</h1>
                                     <div class="font-bold text-navy">100%</div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <h5 class="m-b-xs">Доп. прогнозная добыча</h5>
+                                <div class="col-xs-3">
+                                    <h5 class="m-b-xs">Доп. добыча</h5>
                                     <h1 class="no-margins" id="addedData">0</h1>
                                     <div class="font-bold text-navy"><span id="addedPercent">0%</span></div>
                                 </div>
+                                <div class="col-xs-3">
+                                    <h5 class="m-b-xs">Фактическая добыча</h5>
+
+                                    <h1 class="no-margins" >88,523</h1>
+                                    <div class="font-bold text-navy">100%</div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <h5 class="m-b-xs">Доп. добыча</h5>
+                                    <h1 class="no-margins">5, 759</h1>
+                                    <div class="font-bold text-navy">6.51%</div>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class=col-xs-6>
 
-                            <table class="table small m-t-sm">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <strong>#1 Вертикальные скважины</strong>
+                                    <table class="table small m-t-sm">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <strong>#1 Ввод новых скважин</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>#2 Мероприятия на бездейстфующем фонде</strong>
 
-                                    </td>
-                                    <td>
-                                        <strong id="vertWork">0</strong> Работ
-                                    </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>#3 Мероприятия на дейстфующем фонде</strong>
 
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>#2 Горизонтальные скважины</strong>
-
-                                    </td>
-                                    <td>
-                                        <strong id="horWork">0</strong> Работ
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>#3 Наклонные скважины</strong>
-
-                                    </td>
-                                    <td>
-                                        <strong id="inlineWork">0</strong> Работ
-                                    </td>
-
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="flot-chart" style="height:200px">
-                                <div class="flot-chart-pie-content" id="flot-pie-chart-2" style="height:200px"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>#3 Совершенствование системы воздействия</strong>
+                                            </td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="flot-chart" style="height:140px">
+                                        <div class="flot-chart-pie-content" id="flot-pie-chart-2" style="height:140px"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="flot-chart" style="height:140px">
+                                        <div class="flot-chart-pie-content" id="flot-pie-chart-3" style="height:140px"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="row">
@@ -736,7 +749,60 @@
                 data: 10,
                 color: "#1ab394",
             }];
+            var dataplot3 = [{
+                label: "#1",
+                data: 27,
+                color: "#d3d3d3",
+            }, {
+                label: "#2",
+                data: 24,
+                color: "#bababa",
+            }, {
+                label: "#3",
+                data: 36,
+                color: "#79d2c0",
+            }, {
+                label: "#4",
+                data: 13,
+                color: "#1ab394",
+            }];
             var plotObj = $.plot($("#flot-pie-chart"), data, {
+                series: {
+                    pie: {
+                        show: true,               
+                        label: {
+                            show:true,
+                            radius: 0.8,
+                            formatter: function (label, series) {               
+                                return '<div style="border:1px solid grey;font-size:8pt;text-align:center;padding:5px;color:white;">' +
+                                label + ' : ' +
+                                Math.round(series.percent) +
+                                '%</div>';
+                            },
+                            background: {
+                                opacity: 0.8,
+                                color: '#000'
+                            }
+                        }
+                    }
+                },
+                grid: {
+                    hoverable: true
+                },
+                tooltip: true,
+                tooltipOpts: {
+                    content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                    shifts: {
+                        x: 20,
+                        y: 0
+                    },
+                    defaultTheme: false
+                },
+                legend: {
+                    show: false
+                }
+            });
+            var plotObj3 = $.plot($("#flot-pie-chart-3"), dataplot3, {
                 series: {
                     pie: {
                         show: true,               
