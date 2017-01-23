@@ -131,4 +131,13 @@
         replotPie();
 
     });
+
+
 })();
+
+var showThirdGraph = function() {
+    $(".invis").show();
+    $(".shift").attr('class', 'col-xs-3');
+    showFact = true;
+    replot();
+}
