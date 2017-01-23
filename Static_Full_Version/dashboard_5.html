@@ -362,71 +362,40 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox">
-
-
-
                                                     <div class="ibox-content">
-
-                                                        <div class="row" id="headers">
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="product_name">Наименование</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="price">Кол. скважин</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="quantity">Средняя  добыча 1 скв.</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="status">Дата  начала работ скв.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="table-responsive">
                                                             <table class="table table-striped">
-
+                                                                <thead>
+                                                                    <th>Наименование</th>
+                                                                    <th>Тип работы</th>
+                                                                    <th>Кол-во</th>
+                                                                    <th>Средняя добыча 1 скв.</th>
+                                                                    <th>
+                                                                        Дата начала работ скв.
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
                                                                 <tbody id="mytable">
 
                                                                     <tr>
-                                                                        <td class="col-sm-4">Ввод скважин из бездействия, всего</td>
-                                                                        <td class="col-sm-2">1</td>
-                                                                        <td class="col-sm-3">2</td>
-                                                                        <td class="col-sm-3">
-                                                                            <input type='text' class='datetimepicker'/>
-                                                                        </td>
-                                                                    </tr>
-
-                                                                    <tr>
+                                                                        <td>Ввод скважин из бездействия</td>
                                                                         <td>Спуск ГНО</td>
-                                                                        <td></td>
-                                                                        <td></td>
+                                                                        <td><input type="text" class="form-control" id="o_count"></td>
+                                                                        <td><input type="text" class="form-control" id="o_volume"></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <input type='text' class='form-control datetimepicker' id="o_date"/>
                                                                         </td>
+                                                                        <td><button type="button" class="btn btn-w-m btn-primary btn-sm" id="o_add">Добавить</button></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Мероприятия по КРС и интенсификации добычи</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
                                                                         <td>Изменение эксплуатационного объекта</td>
-                                                                        <td></td>
-                                                                        <td></td>
+                                                                        <td><input type="text" class="form-control" id="o_count"></td>
+                                                                        <td><input type="text" class="form-control" id="o_volume"></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <input type='text' class='form-control datetimepicker' id="o_date"/>
                                                                         </td>
+                                                                        <td><button type="button" class="btn btn-w-m btn-primary btn-sm" id="o_add">Добавить</button></td>
                                                                     </tr>
 
                                                                 </tbody>
@@ -445,166 +414,54 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox">
-
-
-
                                                     <div class="ibox-content">
-
-                                                        <div class="row" id="headers">
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="product_name">Наименование</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="price">Кол. скважин</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="quantity">Средняя  добыча 1 скв.</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="status">Дата  начала работ скв.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="table-responsive">
                                                             <table class="table table-striped">
+                                                                <thead>
+                                                                    <th>Наименование</th>
+                                                                    <th>Тип работы</th>
+                                                                    <th>Кол-во</th>
+                                                                    <th>Средняя добыча 1 скв.</th>
+                                                                    <th>
+                                                                        Дата начала работ скв.
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
 
                                                                 <tbody id="mytable">
 
                                                                     <tr>
-                                                                        <td class="col-sm-4">Мероприятия на действующем фонде, всего</td>
-                                                                        <td class="col-sm-2">1</td>
-                                                                        <td class="col-sm-3">2</td>
-                                                                        <td class="col-sm-3">
-                                                                            <input type='text' class='datetimepicker'/>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
+                                                                        <td>Мероприятия на действующем фонде</td>
                                                                         <td>Оптимизация режимов работы скважин</td>
-                                                                        <td></td>
-                                                                        <td></td>
+                                                                        <td><input type="text" class="form-control" id="o_count"></td>
+                                                                        <td><input type="text" class="form-control" id="o_volume"></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <input type='text' class='form-control datetimepicker' id="o_date"/>
                                                                         </td>
+                                                                        <td><button type="button" class="btn btn-w-m btn-primary btn-sm" id="o_add">Добавить</button></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Мероприятия по КРС и интенсификации добычи</td>
-                                                                        <td></td>
-                                                                        <td></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <select class="form-control m-b" id="o_type">
+                                                                                <option selected="selected" value="0">Изоляция водопритоков (по пласту)</option>
+                                                                                <option value="1">Ликвидация заколонных перетоков</option>
+                                                                                <option value="2">Ликвидация негерметичности э/к</option>
+                                                                                <option value="3">Бурение боковых стволов</option>
+                                                                                <option value="4">ГРП</option>
+                                                                                <option value="5">Реперфорации, дострелы, приобщения</option>
+                                                                                <option value="6">Прочие ОПЗ</option>
+                                                                                <option value="7">Изменение эксплуатационного объекта</option>
+                                                                                <option value="8">Ликвидация аварий</option>
+                                                                                <option value="9">Прочие работы по КРС</option>
+                                                                            </select>
                                                                         </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ремонтно-изоляционные работы</td>
-                                                                        <td></td>
-                                                                        <td></td>
+                                                                        <td><input type="text" class="form-control" id="o_count"></td>
+                                                                        <td><input type="text" class="form-control" id="o_volume"></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <input type='text' class='form-control datetimepicker' id="o_date"/>
                                                                         </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т.ч. изоляция водопритоков (по пласту)</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т.ч. ликвидация заколонных перетоков</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т.ч. ликвидация негерметичности э/к</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Бурение боковых стволов</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т.ч. с наклонно-направленным окончанием</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Интенсификация притоков, всего</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т. ч. ГРП</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т. ч. реперфорации, дострелы, приобщения</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>В т. ч. прочие ОПЗ</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Изменение эксплуатационного объекта</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ликвидация аварий</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Прочие работы по КРС</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-w-m btn-primary btn-sm" id="o_add">Добавить</button></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -622,96 +479,37 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox">
-
-
-
                                                     <div class="ibox-content">
-
-                                                        <div class="row" id="headers">
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="product_name">Наименование</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="price">Кол. скважин</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="quantity">Средняя  добыча 1 скв.</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label class="control-label" for="status">Дата  начала работ скв.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="table-responsive">
                                                             <table class="table table-striped">
-
+                                                                <thead>
+                                                                    <th>Тип работы</th>
+                                                                    <th>Кол-во</th>
+                                                                    <th>Средняя добыча 1 скв.</th>
+                                                                    <th>
+                                                                        Дата начала работ скв.
+                                                                    </th>
+                                                                    <th></th>
+                                                                </thead>
                                                                 <tbody id="mytable">
                                                                     <tr>
-                                                                        <td class="col-sm-4">Физико-химические методы ПНП</td>
-                                                                        <td class="col-sm-2">1</td>
-                                                                        <td class="col-sm-3">2</td>
-                                                                        <td class="col-sm-3">
-                                                                            <input type='text' class='datetimepicker'/>
-                                                                        </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td>Гидродинамические методы ПНП</td>
-                                                                        <td></td>
-                                                                        <td></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ввод нагнетательных скважин</td>
-                                                                        <td></td>
-                                                                        <td></td>
+                                                                            <select class="form-control m-b" id="o_type">
+                                                                                <option selected="selected" value="0">Физико-химические методы ПНП</option>
+                                                                                <option value="1">Гидродинамические методы ПНП</option>
+                                                                                <option value="2">Ввод нагнетательных скважин</option>
+                                                                                <option value="3">Ремонт нагнетательных скважин</option>
+                                                                                <option value="4">Выбытие скважин из действующего фонда</option>
+                                                                                <option value="5">Остановка сезонно работающих скважин</option>
+                                                                                <option value="6">Ликвидация скважин</option>
+                                                                            </select>
+                                                                        <td><input type="text" class="form-control" id="o_count"></td>
+                                                                        <td><input type="text" class="form-control" id="o_volume"></td>
                                                                         <td>
-                                                                            <input type='text' class='datetimepicker' />
+                                                                            <input type='text' class='form-control datetimepicker' id="o_date"/>
                                                                         </td>
+                                                                        <td><button type="button" class="btn btn-w-m btn-primary btn-sm" id="o_add">Добавить</button></td>
                                                                     </tr>
-                                                                    <tr>
-                                                                        <td>Ремонт нагнетательных скважин</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Выбытие скважин из действующего фонда</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Остановка сезонно работающих скважин</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ликвидация скважин</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td>
-                                                                            <input type='text' class='datetimepicker' />
-                                                                        </td>
-                                                                    </tr>
-
                                                                 </tbody>
                                                             </table>
                                                         </div>
