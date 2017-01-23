@@ -105,14 +105,14 @@ def fileParse():
 
 
 
-	 # row_values = sh.row_values(6)
-	 # temp = []
+	row_values = sh.row_values(6)
+	temp = []
 
-	 # for colnum in range(2, 366):
-	 # 	temp.append(row_values[colnum])
+	for colnum in range(2, 366):
+		temp.append(row_values[colnum])
 
 
-	 # fullData.append(temp)
+	fullData.append(temp)
 
 
 
