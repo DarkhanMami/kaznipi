@@ -64,7 +64,7 @@
         </div>
         <div class="wrapper wrapper-content">
             <!-- <div class="container"> -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-2">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
@@ -131,9 +131,7 @@
 
                     </div>
                 </div>
-            </div>
-
-            
+            </div> -->
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="ibox float-e-margins">
@@ -526,35 +524,35 @@
                 { label: "Data 1", data: d1, color: '#17a084'},
                 { label: "Data 2", data: d2, color: '#127e68' }
             ];
-            $.plot($("#flot-chart1"), data1, {
-                xaxis: {
-                    tickDecimals: 0
-                },
-                series: {
-                    lines: {
-                        show: true,
-                        fill: true,
-                        fillColor: {
-                            colors: [{
-                                opacity: 1
-                            }, {
-                                opacity: 1
-                            }]
-                        },
-                    },
-                    points: {
-                        width: 0.1,
-                        show: false
-                    },
-                },
-                grid: {
-                    show: false,
-                    borderWidth: 0
-                },
-                legend: {
-                    show: false,
-                }
-            });
+            // $.plot($("#flot-chart1"), data1, {
+            //     xaxis: {
+            //         tickDecimals: 0
+            //     },
+            //     series: {
+            //         lines: {
+            //             show: true,
+            //             fill: true,
+            //             fillColor: {
+            //                 colors: [{
+            //                     opacity: 1
+            //                 }, {
+            //                     opacity: 1
+            //                 }]
+            //             },
+            //         },
+            //         points: {
+            //             width: 0.1,
+            //             show: false
+            //         },
+            //     },
+            //     grid: {
+            //         show: false,
+            //         borderWidth: 0
+            //     },
+            //     legend: {
+            //         show: false,
+            //     }
+            // });
 
             var lineData = {
                 labels: ["January", "February", "March", "April", "May", "June", "July"],
