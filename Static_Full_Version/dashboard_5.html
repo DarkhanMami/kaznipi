@@ -16,10 +16,60 @@
     <link href="css/bootstrap-datepicker.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="top-navigation">
 
-    <div id="wrapper">
-        <div id="page-wrapper" class="gray-bg" style="margin-left: 0px;">
+    <div id="wrapper">    
+        <div id="page-wrapper" class="gray-bg">
+
+
+        <div class="row border-bottom white-bg">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <i class="fa fa-reorder"></i>
+                </button>
+                <a href="#" class="navbar-brand">АО "Мангистаумунайгаз"</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a aria-expanded="false" role="button" href="layouts.html">Факторный анализ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Menu item</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+
+
+
+
             <div class="wrapper wrapper-content animated fadeIn">
                 <div class="row">
                     <div class="col-sm-10">
@@ -33,32 +83,7 @@
                 <div class="p-w-md m-t-sm">
 
                     <div class="row">
-
-<!--                         <div class="col-sm-3">
-                            <h1 class="m-b-xs">
-                                26,900
-                            </h1>
-                            <small>
-                                Sales in current month
-                            </small>
-                            <div id="sparkline1" class="m-b-sm"></div>
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <small class="stats-label">Pages / Visit</small>
-                                    <h4>236 321.80</h4>
-                                </div>
-
-                                <div class="col-xs-4">
-                                    <small class="stats-label">% New Visits</small>
-                                    <h4>46.11%</h4>
-                                </div>
-                                <div class="col-xs-4">
-                                    <small class="stats-label">Last week</small>
-                                    <h4>432.021</h4>
-                                </div>
-                            </div>
-
-                        </div> -->
+                        
                         <div class="col-sm-4">
 
                             <div class="row m-t-xs">
@@ -117,8 +142,8 @@
                         </div>
 
                             <div class="col-sm-2">
-                                <div class="flot-chart" style="height:200px">
-                                    <div class="flot-chart-pie-content" id="flot-pie-chart" style="height:200px"></div>
+                                <div class="flot-chart" style="height:160px">
+                                    <div class="flot-chart-pie-content" id="flot-pie-chart" style="height:160px"></div>
                                 </div>
                             </div>
 
@@ -182,13 +207,13 @@
                                     </table>
                                 </div>
                                 <div class="col-xs-3">
-                                    <div class="flot-chart" style="height:140px">
-                                        <div class="flot-chart-pie-content" id="flot-pie-chart-2" style="height:140px"></div>
+                                    <div class="flot-chart" style="height:160px">
+                                        <div class="flot-chart-pie-content" id="flot-pie-chart-2" style="height:160px"></div>
                                     </div>
                                 </div>
                                 <div class="col-xs-3 invis" style="display:none">
-                                    <div class="flot-chart" style="height:140px">
-                                        <div class="flot-chart-pie-content" id="flot-pie-chart-3" style="height:140px"></div>
+                                    <div class="flot-chart" style="height:160px">
+                                        <div class="flot-chart-pie-content" id="flot-pie-chart-3" style="height:160px"></div>
                                     </div>
                                 </div>
                             </div>
