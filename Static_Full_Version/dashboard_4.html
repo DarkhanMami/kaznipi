@@ -38,10 +38,9 @@
                     <li class="dropdown">
                         <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Выгрузка отчетов <span class="caret"></span></a>
                         <ul role="menu" class="dropdown-menu">
-                            <li><a href="">Выгрузка отчетов</a></li>
-                            <li><a href="">Menu item</a></li>
-                            <li><a href="">Menu item</a></li>
-                            <li><a href="">Menu item</a></li>
+                            <li><a href="">Факторный анализ</a></li>
+                            <li><a href="">АВС-анализ недобора добычи и сдачи (план-факт)</a></li>
+                            <li><a href="">АВС-анализ недобора добычи и сдачи (без входящей)</a></li>
                         </ul>
                     </li>
                    
@@ -513,41 +512,42 @@
 
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
                                 <div>
                                         <span class="pull-right text-right">
-                                        <small>Average value of sales in the past month in: <strong>United states</strong></small>
+                                        <small>Сравнение плановых к фактическим в: <strong>ЖМГ</strong></small>
                                             <br/>
-                                            All sales: 162,862
+                                            Период: 14 мес.
                                         </span>
                                     <h3 class="font-bold no-margins">
-                                        Half-year revenue margin
+                                        АО ЖМГ
                                     </h3>
-                                    <small>Sales marketing.</small>
+                                    <small>2016-2017 год.</small>
                                 </div>
 
                                 <div class="m-t-sm">
 
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-9">
                                             <div>
-                                            <canvas id="lineChart2" height="105"></canvas>
+                                            <br>
+                                            <canvas id="lineChart2" height="185"></canvas>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <ul class="stat-list m-t-lg">
                                                 <li>
-                                                    <h2 class="no-margins">2,346</h2>
-                                                    <small>Total orders in period</small>
+                                                    <h3 class="no-margins">1,619,154</h3>
+                                                    <small>План</small>
                                                     <div class="progress progress-mini">
                                                         <div class="progress-bar" style="width: 48%;"></div>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <h2 class="no-margins ">4,422</h2>
-                                                    <small>Orders in last month</small>
+                                                    <h3 class="no-margins ">1,631,045</h3>
+                                                    <small>Факт</small>
                                                     <div class="progress progress-mini">
                                                         <div class="progress-bar" style="width: 60%;"></div>
                                                     </div>
@@ -561,130 +561,165 @@
                                 <div class="m-t-md">
                                     <small class="pull-right">
                                         <i class="fa fa-clock-o"> </i>
-                                        Update on 16.07.2015
+                                        Обновлено 06.02.2017
                                     </small>
-                                    <small>
-                                        <strong>Analysis of sales:</strong> The value has been changed over time, and last month reached a level over $50,000.
-                                    </small>
+                                    
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="label label-warning pull-right">Данные обновлены</span>
-                                <h5>User activity</h5>
+                                <h5>План-факт значения</h5>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>236 321.80</h4>
+                                        <small class="stats-label">Период</small>
+                                        <h4>2016-2017 год</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>46.11%</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>2,014,295</h4>
                                     </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>1,619,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>1,619,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>1,631,045</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>432.021</h4>
+                                        <small class="stats-label">Настоящее</small>
+                                        <h4>Февраль 2017</h4>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>214,295</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>119,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>119,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>31,045</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>643 321.10</h4>
+                                        <small class="stats-label">Прошлое</small>
+                                        <h4>Январь 2017</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>92.43%</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>314,295</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>564.554</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>219,154</h4>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>436 547.20</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>219,154</h4>
                                     </div>
-
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>150.23%</h4>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>124.990</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>131,045</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-5">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="label label-warning pull-right">Данные обновлены</span>
-                                <h5>User activity</h5>
+                                <h5>Анализ оптимистичного плана</h5>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>236 321.80</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>46.11%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>432.021</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>643 321.10</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>92.43%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>564.554</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>436 547.20</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>150.23%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>124.990</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
@@ -896,41 +931,42 @@
 
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
                                 <div>
                                         <span class="pull-right text-right">
-                                        <small>Average value of sales in the past month in: <strong>United states</strong></small>
+                                        <small>Сравнение плановых к фактическим в: <strong>КМГ</strong></small>
                                             <br/>
-                                            All sales: 162,862
+                                            Период: 14 мес.
                                         </span>
                                     <h3 class="font-bold no-margins">
-                                        Half-year revenue margin
+                                        АО КМГ
                                     </h3>
-                                    <small>Sales marketing.</small>
+                                    <small>2016-2017 год.</small>
                                 </div>
 
                                 <div class="m-t-sm">
 
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-9">
                                             <div>
-                                            <canvas id="lineChart3" height="105"></canvas>
+                                            <br>
+                                            <canvas id="lineChart3" height="185"></canvas>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <ul class="stat-list m-t-lg">
                                                 <li>
-                                                    <h2 class="no-margins">2,346</h2>
-                                                    <small>Total orders in period</small>
+                                                    <h3 class="no-margins">1,619,154</h3>
+                                                    <small>План</small>
                                                     <div class="progress progress-mini">
                                                         <div class="progress-bar" style="width: 48%;"></div>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <h2 class="no-margins ">4,422</h2>
-                                                    <small>Orders in last month</small>
+                                                    <h3 class="no-margins ">1,631,045</h3>
+                                                    <small>Факт</small>
                                                     <div class="progress progress-mini">
                                                         <div class="progress-bar" style="width: 60%;"></div>
                                                     </div>
@@ -944,130 +980,165 @@
                                 <div class="m-t-md">
                                     <small class="pull-right">
                                         <i class="fa fa-clock-o"> </i>
-                                        Update on 16.07.2015
+                                        Обновлено 06.02.2017
                                     </small>
-                                    <small>
-                                        <strong>Analysis of sales:</strong> The value has been changed over time, and last month reached a level over $50,000.
-                                    </small>
+                                    
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="label label-warning pull-right">Данные обновлены</span>
-                                <h5>User activity</h5>
+                                <h5>План-факт значения</h5>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>236 321.80</h4>
+                                        <small class="stats-label">Период</small>
+                                        <h4>2016-2017 год</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>46.11%</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>2,014,295</h4>
                                     </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>1,619,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>1,619,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>1,631,045</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>432.021</h4>
+                                        <small class="stats-label">Настоящее</small>
+                                        <h4>Февраль 2017</h4>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>214,295</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>119,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>119,154</h4>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>31,045</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>643 321.10</h4>
+                                        <small class="stats-label">Прошлое</small>
+                                        <h4>Январь 2017</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>92.43%</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Пт. план</small>
+                                        <h4>314,295</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>564.554</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Утв. план</small>
+                                        <h4>219,154</h4>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>436 547.20</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Оп. план</small>
+                                        <h4>219,154</h4>
                                     </div>
-
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>150.23%</h4>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>124.990</h4>
+                                    <div class="col-xs-2">
+                                        <small class="stats-label">Факт</small>
+                                        <h4>131,045</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-5">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <span class="label label-warning pull-right">Данные обновлены</span>
-                                <h5>User activity</h5>
+                                <h5>Анализ оптимистичного плана</h5>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>236 321.80</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>46.11%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>432.021</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>643 321.10</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>92.43%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>564.554</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="ibox-content">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Pages / Visit</small>
-                                        <h4>436 547.20</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл факта от опт плана</small>
+                                        <h4>-383,250</h4>
                                     </div>
 
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">% New Visits</small>
-                                        <h4>150.23%</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Откл (в худш сторону) %</small>
+                                        <h4>19.03%</h4>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <small class="stats-label">Last week</small>
-                                        <h4>124.990</h4>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) %</small>
+                                        <h4>48.48%</h4>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <small class="stats-label">Вклад в откл (опт план) тн.</small>
+                                        <h4>383,250</h4>
                                     </div>
                                 </div>
                             </div>
@@ -1075,6 +1146,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="row">
 
@@ -1312,7 +1384,7 @@
             };
 
             var lineData2 = {
-                labels: ["янв", "фев", "мар", "апр", "май", "июн", "июль", "авг", "сен", "окт", "ноя", "дек"],
+                labels: ["янв", "", "", "апр", "", "", "июл", "", "", "окт", "", "", "янв", ""],
                 datasets: [
                     {
                         label: "Example dataset",
@@ -1322,7 +1394,7 @@
                         pointStrokeColor: "#fff",
                         pointHighlightFill: "#fff",
                         pointHighlightStroke: "rgba(220,220,220,1)",
-                        data: [65, 59, 40, 51, 36, 25, 40]
+                        data: [65, 59, 40, 51, 36, 25, 40, 37, 35, 33, 39, 44, 38, 40]
                     },
                     {
                         label: "Example dataset",
@@ -1332,14 +1404,14 @@
                         pointStrokeColor: "#fff",
                         pointHighlightFill: "#fff",
                         pointHighlightStroke: "rgba(26,179,148,1)",
-                        data: [48, 48, 60, 39, 56, 37, 30]
+                        data: [48, 48, 60, 39, 56, 37, 30, 37, 33, 44, 38, 40, 35, 17]
                     }
                 ]
             };
 
 
             var lineData3 = {
-                labels: ["янв", "фев", "мар", "апр", "май", "июн", "июль", "авг", "сен", "окт", "ноя", "дек"],
+                labels: ["янв", "", "", "апр", "", "", "июл", "", "", "окт", "", "", "янв", ""],
                 datasets: [
                     {
                         label: "Example dataset",
@@ -1349,7 +1421,7 @@
                         pointStrokeColor: "#fff",
                         pointHighlightFill: "#fff",
                         pointHighlightStroke: "rgba(220,220,220,1)",
-                        data: [65, 59, 40, 51, 36, 25, 40]
+                        data: [65, 59, 40, 51, 36, 25, 40, 37, 35, 33, 39, 44, 38, 40]
                     },
                     {
                         label: "Example dataset",
@@ -1359,7 +1431,7 @@
                         pointStrokeColor: "#fff",
                         pointHighlightFill: "#fff",
                         pointHighlightStroke: "rgba(26,179,148,1)",
-                        data: [48, 48, 60, 39, 56, 37, 30]
+                        data: [48, 48, 60, 39, 56, 37, 30, 37, 33, 44, 38, 40, 35, 17]
                     }
                 ]
             };
