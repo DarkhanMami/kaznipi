@@ -35,13 +35,9 @@
                     <li class="active">
                         <a aria-expanded="false" role="button" href="dashboard_5.html">Инструмент моделирования</a>
                     </li>
-                    <li class="dropdown">
-                        <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Выгрузка отчетов <span class="caret"></span></a>
-                        <ul role="menu" class="dropdown-menu">
-                            <li><a href="">Факторный анализ</a></li>
-                            <li><a href="">АВС-анализ недобора добычи и сдачи (план-факт)</a></li>
-                            <li><a href="">АВС-анализ недобора добычи и сдачи (без входящей)</a></li>
-                        </ul>
+                    <li class="">
+                        <a aria-expanded="false" role="button" href="otchet.html" > Выгрузка отчетов <span class="caret"></span></a>
+                        
                     </li>
                    
 
@@ -129,10 +125,10 @@
           
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-9 ">
-                   <h2> <strong>АО "Жайыкмунайгаз"</strong></h2>
+                   <h2> <strong>М/р "Жетыбай"</strong></h2>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="kaynar.html">АО "Кайнармунайгаз"</a>
+                            <a href="kaynar.html">М/р "Каламкас"</a>
                         </li>
                         <li class="active">
                            <a href="dashboard_4.html">АО "Мангистаумунайгаз"</a>
@@ -144,7 +140,120 @@
             <br>
      
 
+<div class="row  border-bottom white-bg dashboard-header">
 
+                    <div class="col-sm-3">
+                        <h2>Месторождение "Жетыбай"</h2>
+                        <small>Кумулятивная информация за <b>9 месяцев</b></small>
+                        <ul class="list-group clear-list m-t">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right text-info">
+                                    861/905
+                                </span>
+                                Количество эксплуатируемых скважин
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right text-info ">
+                                    0,889/0.951
+
+                                </span>
+                                 Коэфф. эксплуатации действующего фонда
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right text-danger">
+                                    5,28/2.93
+
+                                </span>
+                               Годовой коэффициент падения дебита
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right text-warning">
+                                    0,176/0140 <i class="fa fa-level-up"></i>
+
+                                </span>
+                               Коэффициент технологических потерь
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="flot-chart dashboard-chart">
+                            <div class="flot-chart-content" id="flot-dashboard-chart-2"></div>
+                        </div>
+                        <div class="row text-left">
+                            <div class="col-xs-4">
+                                <div class=" m-l-md">
+                                <span class="h4 font-bold m-t block">1 642 477,0 тонн</span>
+                                <small class="text-muted m-b block">Объем добытой нефти</small>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="h4 font-bold m-t block text-info">1 494 137,1 тонн</span>
+                                <small class="text-muted m-b block">Добыча по переходящему фонду</small>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="h4 font-bold m-t block text-success">148 339,9 тонн</span>
+                                <small class="text-muted m-b block">Дополнительная добыча за счет ГТМ</small>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                      <br>
+                    <div class="col-lg-4">
+                                                <table class="table table-hover margin bottom">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="width: 1%" class="text-center">ГТМ</th>
+                                                        <th>Доп. добыча</th>
+                                                        <th class="text-center">Срок (дни)</th>
+                                                        <th class="text-center">К-во скважин</th>
+                                                        <th class="text-center">Рентабельность</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-center"><b>Бурение</b>  </td>
+                                                        <td> 89 646</td>
+                                                        <td class="text-center small">146</td>
+                                                        <td class="text-center small">70</td>
+                                                        <td class="text-center"><span class="label label-primary">59.9 %</span></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><b>ГРП</b> </td>
+                                                        <td> 2 619,0</td>
+                                                        <td class="text-center small">234</td>
+                                                        <td class="text-center small">1</td>
+                                                        <td class="text-center"><span class="label label-success">27.8 %</span></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><b>ПВР </b> </td>
+                                                        <td> 1 541,0</td>
+                                                        <td class="text-center small">138</td>
+                                                        <td class="text-center small">8</td>
+                                                        <td class="text-center"><span class="label label-warning">19.9 %</span></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><b>ББГС </b>     </td>
+                                                        <td> 0,0</td>
+                                                        <td class="text-center small">0</td>
+                                                        <td class="text-center small">0</td>
+                                                        <td class="text-center"><span class="label label-danger">0.0 %</span></td>
+
+                                                    </tr>
+                                                    
+                                                    
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+            </div>
+
+<br>
 
                 <div class="row hide">
                     <div class="col-lg-3">
@@ -364,7 +473,7 @@
                 </div>
 
 
-<div class="row hide">
+                <div class="row hide">
 
                     <div class="col-lg-12">
                         <div class="ibox float-e-margins">
@@ -758,18 +867,7 @@
                                     <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
                                     </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                    <a class="close-link">
-                                        <i class="fa fa-times"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                             <div class="ibox-content">
@@ -1704,7 +1802,152 @@
 
             <!-- </div> -->
 
-        </div>
+                </div>
+
+
+
+
+            <br>
+
+                
+
+<br>
+
+             <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5> АВС-анализ недобора добычи и сдачи (план-факт) </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                   
+                                   
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-sm-9 m-b-xs">
+                                         <div data-toggle="buttons" class="btn-group">
+                                            <label class="btn btn-sm btn-white active"> <input type="radio" id="option1" name="options"> С входящей добычей</label>
+                                            <label class="btn btn-sm btn-white "> <input type="radio" id="option2" name="options"> Без входящей добычи </label>
+                                           
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+
+                                <div class="row ">
+                                    
+                                    <div class="col-lg-3">
+                              
+                                        <ul class="list-group clear-list m-t">
+                                            <li class="list-group-item fist-item">
+                                                                <span class="pull-right">
+                                                                    209 611
+                                                                </span>
+                                                                <span class="label label-info">1</span> Входная добыча
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                    48 427
+                                                                </span>
+                                                                <span class="label label-default">2</span> Недобор добычи из-за падения дебита
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                    45 427
+                                                                </span>
+                                                                <span class="label label-warning">3</span> ГРП 
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                     17 367  
+                                                                </span>
+                                                                <span class="label label-success">4</span> Бурение (вертикальные скважины)
+
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                     15 367  
+                                                                </span>
+                                                                <span class="label label-success">5</span> Недобор добычи нефти от простоя при выполнении работ
+
+
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 text-center">
+                                        <br>
+                                            <canvas id="doughnutChart" width="230" height="230"></canvas>
+                                             <div id="morris-donut-chart"  width="100" height="100" ></div>
+                                             <center><h5  >Статьи</h5></center>
+                                    </div>
+
+
+
+                                    <div class="col-lg-3 text-center">
+                                        <br>
+                                            <canvas id="doughnutChart1" width="230" height="230"></canvas>
+                                             <div id="morris-donut-chart1"  width="100" height="100" ></div>
+                                             <h5 class="" >Ответственность</h5>
+                                        </div>
+                                    <div class="col-lg-3">
+                              
+                                        <ul class="list-group clear-list m-t">
+                                            <li class="list-group-item fist-item">
+                                                                <span class="pull-right">
+                                                                    92 %
+                                                                </span>
+                                                                <span class="label label-info">1</span> ДГиРМ
+
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                    7 %
+                                                                </span>
+                                                                <span class="label label-default">2</span> ДБиКРС
+
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                    1 %
+                                                                </span>
+                                                                <span class="label label-success">3</span> ДГиРМ / ПД / ДБиКРС
+
+                                            </li>
+                                            <li class="list-group-item">
+                                                                <span class="pull-right">
+                                                                     0.55 %  
+                                                                </span>
+                                                                <span class="label label-success">4</span> ПД
+
+                                            </li>
+                                        
+                                            
+                                            
+                                        </ul>
+                                    </div>
+
+
+
+                                </div>
+                       
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+        
+
         <div class="footer">
 <!--             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.
@@ -1729,10 +1972,18 @@
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
-    <!-- Flot -->
+     <!-- Flot -->
     <script src="js/plugins/flot/jquery.flot.js"></script>
     <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
     <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Morris -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+    
+    
 
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
@@ -1756,6 +2007,51 @@
 
     <script>
         $(document).ready(function() {
+            
+            var data1 = [[1, 169.992], [2, 168.735], [3, 167.681], [4, 168.726], [5, 168.606], [6, 167.251], [7, 167.705], [8, 171.142], [9, 170.508], [10, 170.203], [11, 169.847], [12, 170.002], [13, 169.153], [14, 170.692], [15, 169.81], [16, 170.665], [17, 170.344], [18, 170.817], [19, 170.079], [20, 170.492], [21, 169.624], [22, 170.398], [23, 169.31], [24, 170.475], [25, 168.552], [26, 168.632], [27, 171.015], [28, 169.651], [29, 153.935], [30, 169.63], [31, 169.322], [32, 169.687], [33, 169.297], [34, 165.875], [35, 171.499], [36, 171.54], [37, 169.686], [38, 170.561], [39, 169.769], [40, 170.756], [41, 169.858], [42, 169.754], [43, 169.175], [44, 170.831], [45, 169.144], [46, 171.548], [47, 172.902], [48, 173.915], [49, 172.987], [50, 172.18], [51, 172.341], [52, 172.449], [53, 173.43], [54, 170.47], [55, 171.899], [56, 169.478], [57, 172.243], [58, 171.688], [59, 171.789], [60, 171.41], [61, 171.103], [62, 170.059], [63, 171.63], [64, 172.231], [65, 171.092], [66, 170.532], [67, 170.488], [68, 170.644], [69, 171.071], [70, 171.286], [71, 170.833], [72, 170.953], [73, 162.471], [74, 172.197], [75, 172.408], [76, 171.772], [77, 170.806], [78, 171.388], [79, 171.209], [80, 171.438], [81, 170.744], [82, 171.953], [83, 172.034], [84, 171.961], [85, 170.915], [86, 171.47], [87, 172.133], [88, 172.601], [89, 171.219], [90, 171.32], [91, 171.878], [92, 171.39], [93, 173.496], [94, 173.021], [95, 172.992], [96, 172.583], [97, 173.005], [98, 173.12], [99, 173.093], [100, 172.996], [101, 173.361], [102, 173.361], [103, 173.361], [104, 173.361], [105, 173.361], [106, 173.361], [107, 173.361], [108, 173.361], [109, 173.361], [110, 173.361], [111, 173.165], [112, 172.194], [113, 173.132], [114, 173.045], [115, 173.064], [116, 172.505], [117, 172.221], [118, 172.398], [119, 172.922], [120, 170.635], [121, 171.403], [122, 172.865], [123, 173.186], [124, 172.435], [125, 172.918], [126, 173.006], [127, 172.837], [128, 172.115], [129, 172.716], [130, 172.537], [131, 172.295], [132, 173.012], [133, 172.151], [134, 173.254], [135, 173.119], [136, 172.686], [137, 164.45], [138, 149.915], [139, 169.265], [140, 164.613], [141, 160.501], [142, 164.125], [143, 157.413], [144, 168.84], [145, 162.801], [146, 162.691], [147, 164.22], [148, 166.993], [149, 176.955], [150, 180.853], [151, 194.758], [152, 201.91], [153, 202.354], [154, 202.509], [155, 199.302], [156, 202.808], [157, 204.654], [158, 227.104], [159, 227.792], [160, 227.233], [161, 232.278], [162, 224.415], [163, 219.078], [164, 219.282], [165, 217.636], [166, 216.708], [167, 214.369], [168, 215.184], [169, 216.488], [170, 204.304], [171, 221.691], [172, 227.726], [173, 228.239], [174, 227.14], [175, 229.131], [176, 231.142], [177, 233.701], [178, 239.783], [179, 238.547], [180, 237.379], [181, 233.426], [182, 241.032], [183, 237.451], [184, 232.979], [185, 238.336], [186, 238.447], [187, 234.134], [188, 233.101], [189, 234.82], [190, 232.08], [191, 234.086], [192, 233.23], [193, 235.552], [194, 246.473], [195, 242.071], [196, 228.525], [197, 225.332], [198, 226.184], [199, 221.831], [200, 225.032], [201, 223.409], [202, 221.325], [203, 222.85], [204, 222.939], [205, 220.886], [206, 222.437], [207, 219.853], [208, 222.007], [209, 229.371], [210, 226.611], [211, 226.422], [212, 226.986], [213, 226.879], [214, 226.997], [215, 226.936], [216, 226.988], [217, 226.971], [218, 226.918], [219, 226.939], [220, 216.205], [221, 223.585], [222, 230.207], [223, 230.101], [224, 227.451], [225, 229.345], [226, 243.255], [227, 270.084], [228, 288.864], [229, 296.698], [230, 302.404], [231, 257.714], [232, 257.362], [233, 257.665], [234, 256.591], [235, 257.605], [236, 257.69], [237, 257.729], [238, 260.005], [239, 234.538], [240, 229.422], [241, 230.089], [242, 229.388], [243, 231.607], [244, 227.506], [245, 216.966], [246, 229.971], [247, 230.762], [248, 230.288], [249, 228.244], [250, 232.651], [251, 227.93], [252, 220.162], [253, 217.877], [254, 218.712], [255, 233.642], [256, 213.02], [257, 211.277], [258, 213.722], [259, 210.953], [260, 213.512], [261, 216.675], [262, 223.815], [263, 236.522], [264, 237.903], [265, 237.607], [266, 251.244], [267, 246.723], [268, 241.695], [269, 228.075], [270, 228.124], [271, 227.006], [272, 232.372], [273, 235.983]
+            ];
+        var data2 = [[1, 169.992], [2, 168.735], [3, 167.681], [4, 168.726], [5, 168.606], [6, 167.251], [7, 167.705], [8, 171.142], [9, 170.508], [10, 170.203], [11, 169.847], [12, 170.002], [13, 169.153], [14, 170.692], [15, 169.81], [16, 170.665], [17, 170.344], [18, 170.817], [19, 170.079], [20, 170.492], [21, 169.624], [22, 170.398], [23, 169.31], [24, 170.475], [25, 168.552], [26, 168.632], [27, 171.015], [28, 169.651], [29, 153.935], [30, 169.63], [31, 169.322], [32, 169.687], [33, 169.297], [34, 165.875], [35, 171.499], [36, 171.54], [37, 169.686], [38, 170.561], [39, 169.769], [40, 170.756], [41, 169.858], [42, 169.754], [43, 169.175], [44, 170.831], [45, 169.144], [46, 171.548], [47, 172.902], [48, 173.915], [49, 172.987], [50, 172.18], [51, 172.341], [52, 172.449], [53, 173.43], [54, 170.47], [55, 171.899], [56, 169.478], [57, 172.243], [58, 171.688], [59, 171.789], [60, 171.41], [61, 171.103], [62, 170.059], [63, 171.63], [64, 172.231], [65, 171.092], [66, 170.532], [67, 170.488], [68, 170.644], [69, 171.071], [70, 171.286], [71, 170.833], [72, 170.953], [73, 162.471], [74, 172.197], [75, 172.408], [76, 171.772], [77, 170.806], [78, 171.388], [79, 171.209], [80, 171.438], [81, 170.744], [82, 171.953], [83, 172.034], [84, 171.961], [85, 170.915], [86, 171.47], [87, 172.133], [88, 172.601], [89, 171.219], [90, 171.32], [91, 171.878], [92, 171.39], [93, 173.496], [94, 173.021], [95, 172.992], [96, 172.583], [97, 173.005], [98, 173.12], [99, 173.093], [100, 172.996], [101, 173.361], [102, 173.361], [103, 173.361], [104, 173.361], [105, 173.361], [106, 173.361], [107, 173.361], [108, 173.361], [109, 173.361], [110, 173.361], [111, 173.165], [112, 172.194], [113, 173.132], [114, 173.045], [115, 173.064], [116, 172.505], [117, 172.221], [118, 172.398], [119, 172.922], [120, 170.635], [121, 171.403], [122, 172.865], [123, 173.186], [124, 172.435], [125, 172.918], [126, 173.006], [127, 172.837], [128, 172.115], [129, 172.716], [130, 172.537], [131, 172.295], [132, 173.012], [133, 172.151], [134, 173.254], [135, 173.119], [136, 172.686], [137, 164.45], [138, 149.915], [139, 169.265], [140, 164.613], [141, 160.501], [142, 164.125], [143, 157.413], [144, 168.84], [145, 162.801], [146, 162.691], [147, 164.22], [148, 166.993], [149, 166.125], [150, 165.97], [151, 165.813], [152, 165.654], [153, 165.493], [154, 165.33], [155, 165.165], [156, 164.998], [157, 164.829], [158, 164.658], [159, 164.485], [160, 164.31], [161, 164.133], [162, 163.954], [163, 163.773], [164, 163.59], [165, 163.405], [166, 163.218], [167, 163.029], [168, 162.838], [169, 162.645], [170, 162.45], [171, 162.253], [172, 162.054], [173, 161.853], [174, 161.65], [175, 161.445], [176, 161.238], [177, 161.029], [178, 160.818], [179, 160.605], [180, 160.39], [181, 160.173], [182, 159.954], [183, 159.733], [184, 159.51], [185, 159.285], [186, 159.058], [187, 158.829], [188, 158.598], [189, 158.365], [190, 158.13], [191, 157.893], [192, 157.654], [193, 157.413], [194, 157.17], [195, 156.925], [196, 156.678], [197, 156.429], [198, 156.178], [199, 155.925], [200, 155.67], [201, 155.413], [202, 155.154], [203, 154.893], [204, 154.63], [205, 154.365], [206, 154.098], [207, 153.829], [208, 153.558], [209, 153.285], [210, 153.01], [211, 152.733], [212, 152.454], [213, 152.173], [214, 151.89], [215, 151.605], [216, 151.318], [217, 151.029], [218, 150.738], [219, 150.445], [220, 150.15], [221, 149.853], [222, 149.554], [223, 149.253], [224, 148.95], [225, 148.645], [226, 148.338], [227, 148.029], [228, 147.718], [229, 147.405], [230, 147.09], [231, 146.773], [232, 146.454], [233, 146.133], [234, 145.81], [235, 145.485], [236, 145.158], [237, 144.829], [238, 144.498], [239, 144.165], [240, 143.83], [241, 143.493], [242, 143.154], [243, 142.813], [244, 142.47], [245, 142.125], [246, 141.778], [247, 141.429], [248, 141.078], [249, 140.725], [250, 140.37], [251, 140.013], [252, 139.654], [253, 139.293], [254, 138.93], [255, 138.565], [256, 138.198], [257, 137.829], [258, 137.458], [259, 137.085], [260, 136.71], [261, 136.333], [262, 135.954], [263, 135.573], [264, 135.19], [265, 134.805], [266, 134.418], [267, 134.029], [268, 133.638], [269, 133.245], [270, 132.85], [271, 132.453], [272, 132.054], [273, 131.653]
+            ];
+            $("#flot-dashboard-chart-2").length && $.plot($("#flot-dashboard-chart-2"), [
+                data1, data2
+            ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 1,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            tickColor: "#d5d5d5",
+                            borderWidth: 1,
+                            color: '#d5d5d5'
+                        },
+                        colors: ["#1ab394", "#1C84C6"],
+                        xaxis:{
+                            axisLabel: 'X'
+                            
+                        },
+                        yaxis: {
+                            axisLabel: 'X',
+                            ticks: 4
+                        },
+                        tooltip: true
+                    }
+            );
 
 
             var d1 = [[1262304000000, 6], [1264982400000, 3057], [1267401600000, 20434], [1270080000000, 31982], [1272672000000, 26602], [1275350400000, 27826], [1277942400000, 24302], [1280620800000, 24237], [1283299200000, 21004], [1285891200000, 12144], [1288569600000, 10577], [1291161600000, 10295]];
@@ -1765,35 +2061,7 @@
                 { label: "Data 1", data: d1, color: '#17a084'},
                 { label: "Data 2", data: d2, color: '#127e68' }
             ];
-            // $.plot($("#flot-chart1"), data1, {
-            //     xaxis: {
-            //         tickDecimals: 0
-            //     },
-            //     series: {
-            //         lines: {
-            //             show: true,
-            //             fill: true,
-            //             fillColor: {
-            //                 colors: [{
-            //                     opacity: 1
-            //                 }, {
-            //                     opacity: 1
-            //                 }]
-            //             },
-            //         },
-            //         points: {
-            //             width: 0.1,
-            //             show: false
-            //         },
-            //     },
-            //     grid: {
-            //         show: false,
-            //         borderWidth: 0
-            //     },
-            //     legend: {
-            //         show: false,
-            //     }
-            // });
+            
 
             var lineData = {
                 labels: ["янв", "", "", "апр", "", "", "июл", "", "", "окт", "", "", "янв", ""],
@@ -1874,8 +2142,7 @@
                 ]
             };
 
-
-
+            
 
             var lineOptions = {
                 scaleShowGridLines: true,
@@ -1905,6 +2172,134 @@
 
         });
     </script>
+     <script>
+        $(document).ready(function() {
+       
+
+
+  
+
+            var doughnutData = [
+                {
+                    value:  60,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "% "
+                },
+                {
+                    value:  14,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "% "
+                },
+                {
+                    value:  11,
+                    color: "#f8ac59",
+                    highlight: "#1ab394",
+                    label: "% "
+                },
+                {
+                    value:   11,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "% "
+                }
+                ,
+                {
+                    value:   4,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "% "
+                }
+                
+            ];
+            var doughnutData1 = [
+                {
+                    value:  92,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "% "
+                },
+                {
+                    value:  7,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "% "
+                }
+                ,
+                {
+                    value:   1.45,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "% "
+                },
+                {
+                    value:   0.55,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "% "
+                }
+                
+            ];
+
+            var doughnutOptions = {
+                segmentShowStroke: true,
+                segmentStrokeColor: "#fff",
+                segmentStrokeWidth: 2,
+                percentageInnerCutout: 45, // This is 0 for Pie charts
+                animationSteps: 100,
+                animationEasing: "easeOutBounce",
+                animateRotate: true,
+                animateScale: false
+            };
+
+            var ctx = document.getElementById("doughnutChart").getContext("2d");
+            var DoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
+            var ctx1 = document.getElementById("doughnutChart1").getContext("2d");
+            var DoughnutChart1 = new Chart(ctx1).Doughnut(doughnutData1, doughnutOptions);
+
+            var polarData = [
+                {
+                    value: 300,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "App"
+                },
+                {
+                    value: 140,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "Software"
+                },
+                {
+                    value: 200,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "Laptop"
+                }
+            ];
+
+            var polarOptions = {
+                scaleShowLabelBackdrop: true,
+                scaleBackdropColor: "rgba(255,255,255,0.75)",
+                scaleBeginAtZero: true,
+                scaleBackdropPaddingY: 1,
+                scaleBackdropPaddingX: 1,
+                scaleShowLine: true,
+                segmentShowStroke: true,
+                segmentStrokeColor: "#fff",
+                segmentStrokeWidth: 2,
+                animationSteps: 100,
+                animationEasing: "easeOutBounce",
+                animateRotate: true,
+                animateScale: false
+            };
+            var ctx = document.getElementById("polarChart").getContext("2d");
+            var Polarchart = new Chart(ctx).PolarArea(polarData, polarOptions);
+
+        });
+    </script>
+    
 
 </body>
 

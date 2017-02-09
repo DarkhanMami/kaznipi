@@ -45,9 +45,11 @@ $(function() {
 
     Morris.Donut({
         element: 'morris-donut-chart',
-        data: [{ label: "Download Sales", value: 12 },
-            { label: "In-Store Sales", value: 30 },
-            { label: "Mail-Order Sales", value: 20 } ],
+        data: [
+			{ label: "Входная добыча", value:  209611 },
+            { label: "Недобор добычи по переходящему фонду из-за падения дебита", value:  48427 },
+            { label: "ГРП", value:  37345 } 
+			],
         resize: true,
         colors: ['#87d6c6', '#54cdb4','#1ab394'],
     });
